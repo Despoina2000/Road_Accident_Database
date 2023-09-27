@@ -31,6 +31,5 @@ ORDER BY t_year;
 
 SELECT  count(v.v_type) as vehicles, t_quarter as year, COUNT (DISTINCT a.id) as accidents, count(a.age_of_casualty) as victims
 FROM  [ACCIDENTSDW ].[dbo].[accident_date],[ACCIDENTSDW ].[dbo].[accidents] a, [ACCIDENTSDW ].[dbo].[vehicle] v 
-WHERE a.id=accident_id AND v.id=vehicle_type_id AND a.number_of_vehicles>2
-GROUP BY ROLLUP (t_year,v_type);
-
+WHERE a.id=accident_id AND v.id=vehicle_type_id AND acc_date = a.accident_date AND a.number_of_vehicles>2
+GROUP BY ROLLUP (t_year, t_quarter, t_month);
