@@ -3,6 +3,11 @@
 The creation of this database provides useful information for road safety policy-making and the reduction of traffic fatalities. The ACCDATA.zip (Accidents Data) file contains data on traffic accidents recorded by UK police authorities between 2005 and 2015. The goal is to analyze the number of road traffic accidents, the number of victims, and the number of vehicles involved based on the gender and age of the at-fault driver, the type of vehicle, the severity of the accident, the condition of the surface conditions at the scene of the accident, and any combination thereof. It is understood that the analysis of the data should also take the time factor into account so that competent authorities are able to produce statistical reports with accident data by month, quarter, and year.
 
 ## The Ιmplementations
+We set up our database with [SQL queries](https://github.com/Despoina2000/Road_Accident_Database/tree/main/SQL%20Tables) using the [MICROSOFT SQL SERVER](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) program. Then we created [two files with queries](https://github.com/Despoina2000/Road_Accident_Database/tree/main/Queries) to test the efficiency of the database and find necessary statistics.
+
+## Team Members
+- [Despoina Papadopoulou](https://github.com/Despoina2000)
+
 
 ## Data in ACCDATA.zip
   - **accident_id**
